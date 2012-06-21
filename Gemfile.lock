@@ -1,0 +1,46 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    backports (2.6.1)
+    bson (1.6.4)
+    bson_ext (1.6.4)
+      bson (~> 1.6.4)
+    eventmachine (0.12.10)
+    json (1.7.3)
+    jwt (0.1.4)
+      json (>= 1.2.4)
+    mongo (1.6.4)
+      bson (~> 1.6.4)
+    rack (1.4.1)
+    rack-oauth2-server (2.6.1)
+      bson_ext
+      json
+      jwt (~> 0.1.4)
+      mongo (~> 1)
+      rack (~> 1.1)
+      sinatra (~> 1.1)
+    rack-protection (1.2.0)
+      rack
+    rack-test (0.6.1)
+      rack (>= 1.0)
+    sinatra (1.3.2)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
+    sinatra-contrib (1.3.1)
+      backports (>= 2.0)
+      eventmachine
+      rack-protection
+      rack-test
+      sinatra (~> 1.3.0)
+      tilt (~> 1.3)
+    tilt (1.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mongo
+  rack-oauth2-server
+  sinatra
+  sinatra-contrib

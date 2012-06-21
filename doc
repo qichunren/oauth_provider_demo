@@ -1,0 +1,15 @@
+Server::Admin.scope = %{read write}
+    @client = Server.register(:display_name=>"UberClient", :redirect_uri=>"http://uberclient.dot/callback", :scope=>%w{read write oauth-admin})
+
+
+
+
+curl -i http://cqrorx.com:4567/oauth/access_token -F grant_type=password -F client_id=4fe2972434929452ac000001 -F client_secret=cb4b6e6fbc3c8c39fd7013b41c447620520b550c72aa1a8eea6c410c40f52979 -F "scope=read write" -F username=qichunren -F password=123456
+
+
+
+curl -i http://cqrorx.com:4567/oauth/access_token -F grant_type=password -F client_id=4fe2981234929453de000001 -F client_secret=fbf2c5354b4e6b1d04be5dc6ac3a1f2a0f5150f0ad5549c6a19a58ee219c07c8 -F "scope=read write" -F username=qichunren -F password=123456
+
+
+
+curl -i http://cqrorx.com:4567/private -H "Authorization: OAuth fa93253cab1ea1532fa6bc681755ee67d9498e4afb3b90fe19019e79fd4d10e1"
